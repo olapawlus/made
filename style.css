@@ -96,6 +96,12 @@ body {
     letter-spacing: -0.04em;
     margin: 0;
 }
+.dateBox .fontStyle {
+    font-weight: 700;
+    font-size: 21.2491px;
+    line-height: 26px;
+    letter-spacing: 0.5em;
+}
 .contactBox h2 {
     font-family: 'Montserrat';
     font-style: normal;
@@ -120,35 +126,179 @@ body {
     position: relative;
   }
 
-  .animationBox .heart {
-    position: absolute;
-    left: 0;
-    /* filter: drop-shadow(3px 5px 2px rgba(212, 32, 119, 0.9)); */
-    /* filter: drop-shadow(4px -1px 1px rgba(212, 32, 119, 0.9)); */
-    filter: drop-shadow(3px 0px 0px rgba(212, 32, 119, 0.9));
-    animation: heartbeat linear 1s infinite alternate;
-  }
-
-  @keyframes heartbeat {
-    0% {
-        /* filter: drop-shadow(4px -1px 1px rgba(212, 32, 119, 0.9)); */
-        filter: drop-shadow(3px 0px 0px rgba(212, 32, 119, 0.9));
-    }
-    50% {
-        filter: drop-shadow(8px -5px 1px rgba(212, 32, 119, 0.9));
-    }
-   51% {
-        /* filter: drop-shadow(10px -12px 2px rgba(212, 32, 119, 0.9)); */
-        filter: drop-shadow(13px -10px 1px rgba(212, 32, 119, 0.9));
-    }
-  }
-
   .animationBox .txt {
+    filter: drop-shadow(6px 3px 4px #00BDFF);
+    animation: neon linear 4s infinite normal;
+    animation-fill-mode: both;
+
     position: absolute;
     left: 190px;
     top: 81px;
   }
 
+
+  @keyframes neon {
+    0% {
+        filter: drop-shadow(6px 3px 4px #00BDFF);
+    }
+
+    20% {
+        filter: drop-shadow(6px 3px 4px #00BDFF);
+    } 
+    21% {
+        filter: none;
+    }
+
+
+    22% {
+        filter: drop-shadow(6px 3px 4px #00BDFF);
+    }
+   
+    60% {
+        filter: drop-shadow(6px 3px 4px #00BDFF);
+    }
+    61% {
+        filter: none;
+    }
+
+    62% {
+        filter: drop-shadow(6px 3px 4px #00BDFF);
+    }
+    67% {
+        filter: drop-shadow(6px 3px 4px #00BDFF);
+    }
+
+    67% {
+        filter: none;
+    }
+
+    68% {
+        filter: drop-shadow(6px 3px 4px #00BDFF);
+    }
+    
+    100% {
+        filter: drop-shadow(6px 3px 4px #00BDFF);
+    }
+  }
+
+
+  .animationBox .heart {
+    position: absolute;
+    left: 0;
+  }
+
+  .animationBox .whiteheart {
+    /* filter: drop-shadow(3px 1px 3px #FF0CD8); */
+    /* animation: neonheart linear 2s infinite alternate; */
+    animation: heartbeatopacity linear 2s infinite alternate;
+    animation-fill-mode: both;
+  }
+  .animationBox .neonheart {
+    /* filter: drop-shadow(-1px 0px 3px #FF0CD8); */
+    /* filter: drop-shadow(-2px -3px 3px #FF0CD8); */
+    /* animation: heartbeat2 linear 2s infinite alternate; */
+    /* animation-fill-mode: both; */
+    width: 245px;
+    height: 284px;
+    left: -10px;
+    top: -10px;
+  }
+
+  @keyframes whiteheartvisible {
+    0% {
+       opacity: 1;
+    }
+  
+    80% {
+        opacity: 1;
+    }
+    81% {
+        opacity: 0;
+    }
+    82% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+
+  }
+  @keyframes whiteheartvisible2 {
+    0% {
+        filter: drop-shadow(-2px -3px 3px #FF0CD8);
+    }
+  
+    80% {
+        filter: drop-shadow(-2px -3px 3px #FF0CD8);
+    }
+    81% {
+        filter: none;
+    }
+    82% {
+        filter: drop-shadow(-2px -3px 3px #FF0CD8);
+    }
+    100% {
+        filter: drop-shadow(-2px -3px 3px #FF0CD8);
+    }
+
+  }
+
+  /* @keyframes neonheart {
+    0% {
+        filter: drop-shadow(4px 1px 3px #FF0CD8);
+    }
+ 
+    80% {
+        filter: drop-shadow(4px 1px 3px #FF0CD8);
+    }
+    81% {
+        filter: drop-shadow(1px 1px 3px #FF0CD8);
+    }
+    82% {
+        filter: drop-shadow(4px 1px 3px #FF0CD8);
+    }
+    100% {
+        filter: drop-shadow(4px 1px 3px #FF0CD8);
+    }
+
+  } */
+
+  @keyframes heartbeat {
+    0% {
+        filter: drop-shadow(2px 1px 3px #FF0CD8);
+    }
+    50% {
+        filter: drop-shadow(5px 1px 3px #FF0CD8);
+    }
+   51% {
+        filter: none;
+    }
+  }
+  @keyframes heartbeatopacity {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+   51% {
+        opacity: 0;
+    }
+  }
+
+  @keyframes heartbeat2 {
+    0% {
+        filter: drop-shadow(-2px -3px 3px #FF0CD8);
+    }
+    50% {
+        filter: none;
+    }
+   51% {
+        filter: none;
+    }
+  }
+
+ 
 
 @media (max-width: 767px) {
    
@@ -167,6 +317,10 @@ body {
         font-size: 15px;
         line-height: 30px;
       }
+      .dateBox .fontStyle {
+        font-size: 15px;
+        line-height: 30px;
+    }
 
       .contactBox address, .contactBox span {
         font-size: 15px;
@@ -193,6 +347,14 @@ body {
 
       .animationBox .heart {
        left: 49px;
+      }
+      .animationBox .neonheart {
+        top: -8px;
+        left: 128px;
+        left: 40px;
+        width: 187px;
+        max-height: 216px;
+        height: 216px
       }
       .animationBox .txt {
         left: 193px;
@@ -233,6 +395,10 @@ body {
     .animationBox .heart {
         left: 50%;
         transform: translateX(-124px);
+    }
+
+    .animationBox .neonheart { 
+       left: 47.55%;
     }
     .animationBox .txt {
         left: 50%;
