@@ -114,7 +114,10 @@ body {
     margin: 0;
     margin-bottom: 8px;
 }
-.contactBox address, .contactBox span {
+.contactBox a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
     font-size: 17px;
     line-height: 20px;
     font-weight: 700;
