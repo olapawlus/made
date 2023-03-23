@@ -142,11 +142,11 @@ body {
 
   @keyframes neon {
     0% {
-        filter: drop-shadow(6px 3px 4px #00BDFF);
+        filter: drop-shadow(6px -8px 9px #00BDFF);
     }
 
     20% {
-        filter: drop-shadow(6px 3px 4px #00BDFF);
+        filter: drop-shadow(6px -8px 9px #00BDFF);
     } 
     21% {
         filter: none;
@@ -154,21 +154,21 @@ body {
 
 
     22% {
-        filter: drop-shadow(6px 3px 4px #00BDFF);
+        filter: drop-shadow(6px -8px 9px #00BDFF);
     }
    
     60% {
-        filter: drop-shadow(6px 3px 4px #00BDFF);
+        filter: drop-shadow(6px -8px 9px #00BDFF);
     }
     61% {
         filter: none;
     }
 
     62% {
-        filter: drop-shadow(6px 3px 4px #00BDFF);
+        filter: drop-shadow(6px -8px 9px #00BDFF);
     }
     67% {
-        filter: drop-shadow(6px 3px 4px #00BDFF);
+        filter: drop-shadow(6px -8px 9px #00BDFF);
     }
 
     67% {
@@ -176,14 +176,13 @@ body {
     }
 
     68% {
-        filter: drop-shadow(6px 3px 4px #00BDFF);
+        filter: drop-shadow(6px -8px 9px #00BDFF);
     }
     
     100% {
-        filter: drop-shadow(6px 3px 4px #00BDFF);
+        filter: drop-shadow(6px -8px 9px #00BDFF);
     }
   }
-
 
   .animationBox .heart {
     position: absolute;
@@ -193,7 +192,7 @@ body {
   .animationBox .whiteheart {
     /* filter: drop-shadow(3px 1px 3px #FF0CD8); */
     /* animation: neonheart linear 2s infinite alternate; */
-    animation: heartbeatopacity linear 2s infinite alternate;
+    animation: heartbeatopacity linear 1.5s infinite alternate;
     animation-fill-mode: both;
   }
   .animationBox .neonheart {
@@ -282,9 +281,28 @@ body {
         opacity: 1;
     }
     50% {
-        opacity: 0;
+        opacity: 1;
     }
    51% {
+        opacity: 0;
+    }
+
+
+    80% {
+        opacity: 0;
+    }
+    81% {
+        opacity: 1;
+        filter: drop-shadow(-2px -3px 10px #FF0CD8);
+    }
+    84% {
+        opacity: 1;
+        filter: drop-shadow(-2px -3px 10px #FF0CD8);
+    }
+    85% {
+        opacity: 0;
+    }
+    100% {
         opacity: 0;
     }
   }
