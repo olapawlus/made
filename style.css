@@ -131,7 +131,7 @@ body {
   }
 
   .animationBox .txt {
-    filter: drop-shadow(6px 3px 4px #00BDFF);
+    filter: drop-shadow(0 0 0 #00BDFF);
     animation: neon linear 4s infinite normal;
     animation-fill-mode: both;
 
@@ -143,11 +143,11 @@ body {
 
   @keyframes neon {
     0% {
-        filter: drop-shadow(6px -8px 9px #00BDFF);
+        filter: drop-shadow(0 0 0 #00BDFF);
     }
 
     20% {
-        filter: drop-shadow(6px -8px 9px #00BDFF);
+        filter: drop-shadow(0 0 0 #00BDFF);
     } 
     21% {
         filter: none;
@@ -155,21 +155,21 @@ body {
 
 
     22% {
-        filter: drop-shadow(6px -8px 9px #00BDFF);
+        filter: drop-shadow(0 0 0 #00BDFF);
     }
    
     60% {
-        filter: drop-shadow(6px -8px 9px #00BDFF);
+        filter: drop-shadow(0 0 0 #00BDFF);
     }
     61% {
         filter: none;
     }
 
     62% {
-        filter: drop-shadow(6px -8px 9px #00BDFF);
+        filter: drop-shadow(0 0 0 #00BDFF);
     }
     67% {
-        filter: drop-shadow(6px -8px 9px #00BDFF);
+        filter: drop-shadow(0 0 0 #00BDFF);
     }
 
     67% {
@@ -177,11 +177,11 @@ body {
     }
 
     68% {
-        filter: drop-shadow(6px -8px 9px #00BDFF);
+        filter: drop-shadow(0 0 0 #00BDFF);
     }
     
     100% {
-        filter: drop-shadow(6px -8px 9px #00BDFF);
+        filter: drop-shadow(0 0 0 #00BDFF);
     }
   }
 
